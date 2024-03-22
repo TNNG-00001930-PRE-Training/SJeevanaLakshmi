@@ -5,8 +5,7 @@ Hello world!
 Then, the output should be:
 UPPER CASE 1
 LOWER CASE 9"""
-import string
-class upper_lower():
+class Upper_Lower():
 
     def __init__(self,str):
         self.u_str = str
@@ -21,7 +20,7 @@ class upper_lower():
         return upper, lower
     
 u_str = input("Enter a string:")
-tocall = upper_lower(u_str)
+tocall = Upper_Lower(u_str)
 res = tocall.countn()
 print("UPPER CASE:",res[0])
 print("LOWER CASE:",res[1])

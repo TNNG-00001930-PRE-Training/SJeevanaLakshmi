@@ -11,5 +11,7 @@ In case of input data being supplied to the question, it should be assumed to be
 
 user_data = input("Enter sequence of words:") #user input from the consle
 words = user_data.split(',') #split used to separate the words
-print(','.join(sorted(words))) # sorted the given user_data and printed using , join
+s = words.sort()
+for i in words:
+    print(i,end=',') # sorted the given user_data and printed using , join
 
